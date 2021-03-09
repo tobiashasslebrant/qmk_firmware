@@ -94,7 +94,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |      | Reset|      |      |      |      |      |      |      |      |      |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |      |      |Aud on|Audoff|      |prtscr| lang |      |      |      |      |
+ * |      |vol+  |vol-  |mute  |Audoff|prtscr|prtscr| lang |      |      |      |      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |Voice-|Voice+|Mus on|Musoff|MIDIon|MIDIof|      |      |      |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_ADJUST] = LAYOUT_planck_grid(
     _______, RESET,   _______,    RGB_TOG, RGB_MODE_FORWARD, RGB_HUI, RGB_SAI, RGB_VAI, RGB_SPI, _______, _______, _______ ,
-    _______, _______, _______,  AU_ON,   AU_OFF, C(S(KC_PSCR)), C(A(KC_PSCR)), LGUI(KC_SPC),  _______, _______,  _______,  _______,
+    _______, KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP, KC__MUTE,  AU_OFF, C(S(KC_PSCR)), C(A(KC_PSCR)), LGUI(KC_SPC),  _______, _______,  _______,  _______,
     KC_LSFT, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  _______, _______, _______, _______, _______,
     KC_LCTL, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
 )
